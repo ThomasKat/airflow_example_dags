@@ -45,7 +45,7 @@ with DAG(
     default_args={'retries': 2},
     # [END default_args]
     description='ETL DAG tutorial',
-    schedule=None,
+    schedule_interval=None,
     start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
     catchup=False,
     tags=['example'],
